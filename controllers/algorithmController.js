@@ -10,7 +10,7 @@ module.exports = {
 	 */
 	calculate: async(function(req, res) {
 		var result = '',
-				param = req.query;
+				param = req.body.params;
 		try {
 			var workerProcess = childProcess.exec('node expression.js', function (error, stdout, stderr) {
 	         console.log('stdout: ' + stdout);
