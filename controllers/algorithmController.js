@@ -10,14 +10,16 @@ module.exports = {
 	 */
 	calculate: async(function(req, res) {
 		var result = '',
-				param = req.query;
+				param = req.body;
 		try {
-			var workerProcess = childProcess.exec('node expression.js', function (error, stdout, stderr) {
-	         console.log('stdout: ' + stdout);
-	      });
-				workerProcess.on('end', function() {
-					console.log('worker ended');
-				});
+			var workerProcess = childProcess.exec('node expression.js ' + param.i,
+				function (error, stdout, stderr) {
+		      console.log('stdout: ' + stdout);
+		    }
+			);
+			workerProcess.on('end', function() {
+				console.log('worker ended');
+			});
 		} catch (e) {
 			result = e.message;
 		} finally {
