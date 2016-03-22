@@ -6,7 +6,9 @@
   "main": "app.js",
   "dependencies": {
     "asyncawait": "^1.0.3",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mathjs": "^3.1.0",
+    "shelljs": "^0.6.0"
   },
   "devDependencies": {},
   "scripts": {
