@@ -1,0 +1,18 @@
+{
+  "name": "algorythm",
+  "version": "1.0.0",
+  "url": "git@github:1488#dev",
+  "lisence": "MIT",
+  "main": "app.js",
+  "dependencies": {
+    "asyncawait": "^1.0.3",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}
