@@ -9,6 +9,7 @@ module.exports = {
 	 * @param {object} input - expression params
 	 */
 	calculate: async(function(req, res) {
+		console.log(req.body);
 		var result = '',
 				param = req.body;
 		try {
